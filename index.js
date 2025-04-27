@@ -3,20 +3,19 @@ const { Client, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 const { OpenAI } = require('openai');
 
-// Inicializar cliente de WhatsApp con sesión persistente
+// Inicializar cliente de WhatsApp con sesión persistente en 'auth_session'
 const client = new Client({
     authStrategy: new LocalAuth({
-        dataPath: './auth_session' // Aquí especificamos tu nueva carpeta
+        dataPath: './auth_session'
     })
 });
-
 
 // Inicializar cliente de OpenAI (ChatGPT)
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
 });
 
-// Mostrar QR para vincular WhatsApp si no hay sesión
+// Mostrar QR si es necesario
 client.on('qr', (qr) => {
     console.log('Escanea este QR con tu WhatsApp:');
     qrcode.generate(qr, { small: true });

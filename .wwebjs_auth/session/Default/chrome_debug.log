@@ -197,3 +197,4 @@
 [0426/232410.499:INFO:CONSOLE(1765)] "Failed to parse video contentType: video/mp4; codecs=avc1.42000a", source: https://static.whatsapp.net/rsrc.php/v4i8Pv4/ya/l/rt/7PGhwUu-XNR.js (1765)
 [0426/232410.499:INFO:CONSOLE(1765)] "Failed to parse video contentType: video/mp4; codecs=hev1.1.6.L93.B0", source: https://static.whatsapp.net/rsrc.php/v4i8Pv4/ya/l/rt/7PGhwUu-XNR.js (1765)
 [0426/232415.674:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yq/r/om54c0vglmO.js (157)
+[0426/233529.298:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yq/r/om54c0vglmO.js (157)
