@@ -1,0 +1,22 @@
+2025/04/27-00:11:33.654 14ac Reusing MANIFEST D:\Agentes IA\whatsapp-chatgpt-bot\auth_session\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/04/27-00:11:33.655 14ac Recovering log #113
+2025/04/27-00:11:33.657 14ac Reusing old log D:\Agentes IA\whatsapp-chatgpt-bot\auth_session\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000113.log 
+2025/04/27-00:11:35.632 48c8 Level-0 table #123: started
+2025/04/27-00:11:35.666 48c8 Level-0 table #123: 26313 bytes OK
+2025/04/27-00:11:35.698 48c8 Delete type=0 #113
+2025/04/27-00:11:35.698 48c8 Manual compaction at level-0 from '\x00\x1b\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1c\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/04/27-00:11:37.757 612c Compacting 1@1 + 6@2 files
+2025/04/27-00:11:37.867 612c Generated table #124@1: 21522 keys, 2184720 bytes
+2025/04/27-00:11:37.966 612c Generated table #125@1: 3241 keys, 2152652 bytes
+2025/04/27-00:11:38.067 612c Generated table #126@1: 22232 keys, 2215251 bytes
+2025/04/27-00:11:38.188 612c Generated table #127@1: 60062 keys, 2213886 bytes
+2025/04/27-00:11:38.255 612c Generated table #128@1: 25584 keys, 562613 bytes
+2025/04/27-00:11:38.255 612c Compacted 1@1 + 6@2 files => 9329122 bytes
+2025/04/27-00:11:38.286 612c compacted to: files[ 0 0 5 0 0 0 0 ]
+2025/04/27-00:11:38.287 612c Delete type=2 #110
+2025/04/27-00:11:38.287 612c Delete type=2 #116
+2025/04/27-00:11:38.287 612c Delete type=2 #117
+2025/04/27-00:11:38.287 612c Delete type=2 #118
+2025/04/27-00:11:38.287 612c Delete type=2 #119
+2025/04/27-00:11:38.287 612c Delete type=2 #120
+2025/04/27-00:11:38.287 612c Delete type=2 #123
