@@ -1,17 +1,22 @@
 require('dotenv').config();
-const { Client } = require('whatsapp-web.js');
+const { Client, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 const { OpenAI } = require('openai');
 
-// Inicializar cliente de WhatsApp
-const client = new Client();
+// Inicializar cliente de WhatsApp con sesión persistente
+const client = new Client({
+    authStrategy: new LocalAuth({
+        dataPath: './auth_session' // Aquí especificamos tu nueva carpeta
+    })
+});
+
 
 // Inicializar cliente de OpenAI (ChatGPT)
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
 });
 
-// Mostrar QR para vincular WhatsApp
+// Mostrar QR para vincular WhatsApp si no hay sesión
 client.on('qr', (qr) => {
     console.log('Escanea este QR con tu WhatsApp:');
     qrcode.generate(qr, { small: true });
@@ -35,7 +40,6 @@ client.on('message', async (message) => {
                 { role: 'user', content: message.body }
             ],
         });
-        
 
         // Tomar la respuesta generada
         const respuestaTexto = respuesta.choices[0].message.content.trim();
